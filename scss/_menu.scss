@@ -103,11 +103,13 @@
 
 	.nav-item {
 		transform: translate3d(600px, 0, 0);
+		opacity: 0;
 		@include easeOut;
 
 		&.show {
 			//Slide in from right
 			transform: translate3d(0, 0, 0);
+			opacity: 1;
 		}
 
 		&.active > a {
