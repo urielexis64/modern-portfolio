@@ -1,8 +1,13 @@
-$primary-color: rgb(25, 49, 94);
-$secondary-color: #347ff6;
+$primary-color: #151333;
+$secondary-color: #5149bb;
+$text-dark-color: #14142c;
+$text-light-color: #e4e4e4;
 $show-home-image: true;
 $home-image: linear-gradient(#190631, #130f55);
 $background-opacity: 0.1;
+$image-shadow: inset 4px 4px 5px #000, 4px 4px 15px #000;
+$button-border-radius: 5px;
+$image-border-radius: 50%;
 
 @mixin easeOut {
 	transition: all 0.4s ease-out;
@@ -35,9 +40,9 @@ $background-opacity: 0.1;
 //Set text color
 @function set-text-color($color) {
 	@if (lightness($color) > 40) {
-		@return black;
+		@return $text-dark-color;
 	} @else {
-		@return white;
+		@return $text-light-color;
 	}
 }
 
