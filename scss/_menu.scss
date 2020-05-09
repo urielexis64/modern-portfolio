@@ -20,6 +20,7 @@
 		transform: rotate(180deg);
 
 		.btn-line {
+			background-color: $secondary-color;
 			//Line 1 - Rotate
 			&:nth-child(1) {
 				transform: rotate(45deg) translate(5px, 5px);
@@ -91,7 +92,13 @@
 			background: url('../img/portrait.jpg');
 			background-size: cover;
 			border-radius: 50%;
+			box-shadow: inset 4px 4px 5px #000, 4px 4px 15px #000;
 			border: solid 3px $secondary-color;
+			@include easeOut;
+
+			&:hover {
+				transform: scale(1.05);
+			}
 		}
 	}
 
