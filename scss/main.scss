@@ -73,7 +73,8 @@ main {
 	grid-gap: 30px;
 	grid-template-areas:
 		'bioimage bio bio'
-		'job1 job2 job3';
+		'skill1 skill2 skill3'
+		'skill4 skill5 skill6';
 	grid-template-columns: repeat(3, 1fr);
 
 	.bio-image {
@@ -89,22 +90,32 @@ main {
 	.bio {
 		grid-area: bio;
 		font-size: 1.5rem;
+		text-align: justify;
 	}
 
-	.job-1 {
-		grid-area: job1;
+	.skill-1 {
+		grid-area: skill1;
 	}
-	.job-2 {
-		grid-area: job2;
+	.skill-2 {
+		grid-area: skill2;
 	}
-	.job-3 {
-		grid-area: job3;
+	.skill-3 {
+		grid-area: skill3;
+	}
+	.skill-4 {
+		grid-area: skill4;
+	}
+	.skill-5 {
+		grid-area: skill5;
+	}
+	.skill-6 {
+		grid-area: skill6;
 	}
 
-	.job {
+	.skill {
 		background: lighten($primary-color, 3);
 		border-radius: 10px;
-		padding: 0.5rem;
+		padding: 1rem;
 		border-bottom: $secondary-color 5px solid;
 		box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.3);
 		text-align: justify;
@@ -113,25 +124,13 @@ main {
 
 	i {
 		padding-top: 1rem;
-
-		&.fa-cube {
-			color: #161d65;
-		}
-
-		&.fa-adobe {
-			color: #d291ff;
-		}
-
-		&.fa-file-code {
-			color: #348fb9;
-		}
 	}
 }
 
 #main-footer {
 	text-align: center;
 	padding: 1rem;
-	background: darken($primary-color, $amount: 10);
+	background: darken($primary-color, $amount: 4);
 	color: set-text-color($primary-color);
 	height: 60px;
 }
