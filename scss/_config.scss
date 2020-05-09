@@ -7,6 +7,10 @@ $background-opacity: 0.5;
 	transition: all 0.4s ease-out;
 }
 
+@mixin cubicBezier {
+	transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
 @mixin background {
 	@if $show-home-image {
 		&#bg-img {
