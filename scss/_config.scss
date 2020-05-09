@@ -1,14 +1,15 @@
-$primary-color: #444;
+$primary-color: rgb(25, 49, 94);
 $secondary-color: #347ff6;
 $show-home-image: true;
 $home-image: linear-gradient(#190631, #130f55);
-$background-opacity: 0.2;
+$background-opacity: 0.1;
+
 @mixin easeOut {
 	transition: all 0.4s ease-out;
 }
 
 @mixin cubicBezier {
-	transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+	transition: all 0.4s cubic-bezier(0.93, -0.01, 0.29, 1.02);
 }
 
 @mixin background {
@@ -31,8 +32,16 @@ $background-opacity: 0.2;
 	}
 }
 
-//media query mixins
+//Set text color
+@function set-text-color($color) {
+	@if (lightness($color) > 40) {
+		@return black;
+	} @else {
+		@return white;
+	}
+}
 
+//media query mixins
 @mixin mediaSm {
 	@media screen and (max-width: 500px) {
 		@content;
