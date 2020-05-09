@@ -80,7 +80,9 @@
 	&-branding {
 		background: $primary-color;
 		transform: translate3d(0, 100%, 0);
-		@include cubicBezier &.show {
+		@include cubicBezier;
+
+		&.show {
 			//Slide in from bottom
 			transform: translate3d(0, 0, 0);
 		}
@@ -91,7 +93,7 @@
 			background: url('../img/portrait.jpg');
 			background-size: cover;
 			border-radius: 50%;
-			box-shadow: inset 4px 4px 5px #000, 4px 4px 15px #000;
+			box-shadow: $image-shadow;
 			border: solid 3px $secondary-color;
 			@include easeOut;
 
