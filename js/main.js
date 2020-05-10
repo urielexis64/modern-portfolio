@@ -30,3 +30,11 @@ function toggleMenu() {
 		showMenu = false;
 	}
 }
+
+var animation = bodymovin.loadAnimation({
+	container: document.getElementById('animation'), // Required
+	path: './img/logo.json', // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+});
