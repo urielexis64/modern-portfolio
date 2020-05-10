@@ -110,7 +110,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: linear-gradient(to bottom, transparent, #130f55), url("/dist/img/bg0.png"); }
+    background: linear-gradient(to bottom, transparent, #130f55), url("../img/bg0.png"); }
   body:after {
     content: '';
     position: absolute;
