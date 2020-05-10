@@ -11,6 +11,14 @@
 	.projects {
 		grid-template-columns: repeat(3, 1fr);
 	}
+	main#home h1 {
+		display: block;
+		margin-top: 10vh;
+
+		.anim-container {
+			display: none;
+		}
+	}
 }
 
 //Tablets & small laptops
@@ -22,6 +30,13 @@
 		.lg-heading {
 			line-height: 1;
 			margin-bottom: 1rem;
+		}
+
+		&#home h1 {
+			display: block;
+			.anim-container {
+				display: none;
+			}
 		}
 	}
 
@@ -75,7 +90,12 @@
 //Smartphones
 @include mediaSm {
 	main#home h1 {
+		display: block;
 		margin-top: 10vh;
+
+		.anim-container {
+			display: none;
+		}
 	}
 	.projects {
 		grid-template-columns: 1fr;

@@ -63,7 +63,22 @@ main {
 	&#home {
 		overflow: hidden;
 		h1 {
+			display: inline-block;
 			margin-top: 20vh;
+
+			.anim-container {
+				display: inline-block;
+				justify-content: flex-end;
+
+				#animation {
+					position: absolute;
+					display: flex;
+					align-self: flex-end;
+					right: 50px;
+					width: 300px;
+					margin-top: -190px;
+				}
+			}
 		}
 	}
 }
@@ -132,12 +147,13 @@ main {
 	display: grid;
 	grid-gap: 0.7rem;
 	grid-template-columns: repeat(3, 1fr);
+	padding: 5rem;
 
 	img {
 		width: 100%;
 		border: 3px #fff solid;
 		border-radius: $button-border-radius;
-		filter: brightness(0.9);
+		filter: brightness(0.7);
 		@include easeOut;
 
 		&:hover {
@@ -177,7 +193,7 @@ main {
 #main-footer {
 	text-align: center;
 	padding: 1rem;
-	background: darken($primary-color, $amount: 4);
+	background: darken($primary-color, $amount: 2);
 	color: set-text-color($primary-color);
 	height: 60px;
 }

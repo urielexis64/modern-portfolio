@@ -110,9 +110,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: linear-gradient(#190631, #130f55);
-    background-attachment: fixed;
-    background-size: cover; }
+    background: linear-gradient(to bottom, transparent, #130f55), url("/dist/img/bg0.png"); }
   body:after {
     content: '';
     position: absolute;
@@ -164,7 +162,18 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
+      display: inline-block;
       margin-top: 20vh; }
+      main#home h1 .anim-container {
+        display: inline-block;
+        justify-content: flex-end; }
+        main#home h1 .anim-container #animation {
+          position: absolute;
+          display: flex;
+          align-self: flex-end;
+          right: 50px;
+          width: 300px;
+          margin-top: -190px; }
 
 .about-info {
   display: grid;
@@ -209,12 +218,13 @@ main {
 .projects {
   display: grid;
   grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid;
     border-radius: 5px;
-    filter: brightness(0.9);
+    filter: brightness(0.7);
     transition: all 0.4s ease-out; }
     .projects img:hover {
       filter: brightness(1);
@@ -242,7 +252,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #0f0d24;
+  background: #12102c;
   color: #e4e4e4;
   height: 60px; }
 
@@ -251,9 +261,14 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.2rem; } }
 
-@media screen and (min-width: 769) and (max-width: 1170px) {
+@media screen and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  main#home h1 {
+    display: block;
+    margin-top: 10vh; }
+    main#home h1 .anim-container {
+      display: none; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -262,6 +277,10 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+    main#home h1 {
+      display: block; }
+      main#home h1 .anim-container {
+        display: none; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -290,6 +309,9 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
+    display: block;
     margin-top: 10vh; }
+    main#home h1 .anim-container {
+      display: none; }
   .projects {
     grid-template-columns: 1fr; } }
