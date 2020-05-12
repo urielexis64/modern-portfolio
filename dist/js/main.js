@@ -38,3 +38,11 @@ var animation = bodymovin.loadAnimation({
 	loop: true, // Optional
 	autoplay: true, // Optional
 });
+
+var animationZigzag = bodymovin.loadAnimation({
+	container: document.getElementById('zigzag'), // Required
+	path: './img/bg.json', // Required
+	renderer: 'svg', // Required
+	loop: true, // Optional
+	autoplay: true, // Optional
+});
