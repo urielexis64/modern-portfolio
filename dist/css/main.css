@@ -271,6 +271,15 @@ main {
   background: #a19ddb;
   color: #222; }
 
+.social-media {
+  display: flex; }
+  .social-media div {
+    font-size: 3rem;
+    background-color: rgba(27, 25, 66, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;

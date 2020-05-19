@@ -197,6 +197,18 @@ main {
 	color: #222;
 }
 
+.social-media {
+	display: flex;
+
+	div {
+		font-size: 3rem;
+		background-color: rgba(lighten($primary-color, 4), $alpha: 0.8);
+		border-radius: 15px;
+		padding: 15px;
+		margin: auto;
+	}
+}
+
 #main-footer {
 	text-align: center;
 	padding: 1rem;
