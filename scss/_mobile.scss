@@ -9,6 +9,7 @@
 //Desktops & laptops
 @include mediaLg {
 	.projects {
+		padding: 2rem;
 		grid-template-columns: repeat(3, 1fr);
 	}
 	main#home h1 {
@@ -83,7 +84,20 @@
 	}
 
 	.projects {
+		padding: 1.5rem;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.social-media {
+		display: flex;
+
+		div {
+			font-size: 1.5rem;
+			background-color: rgba(lighten($primary-color, 4), $alpha: 0.8);
+			border-radius: 10px;
+			padding: 12px;
+			margin: auto;
+		}
 	}
 }
 
@@ -98,6 +112,19 @@
 		}
 	}
 	.projects {
+		padding: 2rem;
 		grid-template-columns: 1fr;
+	}
+
+	.social-media {
+		display: flex;
+
+		div {
+			font-size: 1.5rem;
+			background-color: rgba(lighten($primary-color, 4), $alpha: 0.8);
+			border-radius: 10px;
+			padding: 10px;
+			margin: auto;
+		}
 	}
 }

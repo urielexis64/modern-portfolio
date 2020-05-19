@@ -294,6 +294,7 @@ main {
 
 @media screen and (max-width: 1170px) {
   .projects {
+    padding: 2rem;
     grid-template-columns: repeat(3, 1fr); }
   main#home h1 {
     display: block;
@@ -336,7 +337,16 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    padding: 1.5rem;
+    grid-template-columns: repeat(2, 1fr); }
+  .social-media {
+    display: flex; }
+    .social-media div {
+      font-size: 1.5rem;
+      background-color: rgba(27, 25, 66, 0.8);
+      border-radius: 10px;
+      padding: 12px;
+      margin: auto; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -345,4 +355,13 @@ main {
     main#home h1 .anim-container {
       display: none; }
   .projects {
-    grid-template-columns: 1fr; } }
+    padding: 2rem;
+    grid-template-columns: 1fr; }
+  .social-media {
+    display: flex; }
+    .social-media div {
+      font-size: 1.5rem;
+      background-color: rgba(27, 25, 66, 0.8);
+      border-radius: 10px;
+      padding: 10px;
+      margin: auto; } }
